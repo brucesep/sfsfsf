@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="Schf 01 workflow" >
+        <classes>
+            <class name="task.test.SchfDoOne" />
+        </classes>
+    </test>
+    <test name="Schf 02 workflow" >
+        <classes>
+            <class name="task.test.SchfDotwo" />
+        </classes>
+    </test>
+    <test name="Schf 03 workflow" >
+        <classes>
+            <class name="task.test.SchfDoThree" />
+        </classes>
+    </test>
+    <test name="Kschf 01 workflow" >
+        <classes>
+            <class name="task.test.KschfDoOne" />
+        </classes>
+    </test>
+    <test name="Kschf 02 workflow" >
+        <classes>
+            <class name="task.test.KschfDoTwo" />
+        </classes>
+    </test>
+    <test name="Kschf 03 workflow" >
+        <classes>
+            <class name="task.test.KschfDoThree" />
+        </classes>
+    </test>
+    <test name="Dopt workflow" >
+        <classes>
+            <class name="task.test.DoptDo" />
+        </classes>
+    </test>
+    <test name="Doppr workflow" >
+        <classes>
+            <class name="task.test.DopprDo" />
+        </classes>
+    </test>
+    <test name="Proch odin workflow" >
+        <classes>
+            <class name="task.test.ProchDo" />
+        </classes>
+    </test>
+    <test name="Proch mass workflow" >
+        <classes>
+            <class name="task.test.ProchDoMass" />
+        </classes>
+    </test>
+
+</suite>
