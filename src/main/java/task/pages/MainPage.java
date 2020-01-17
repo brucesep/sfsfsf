@@ -147,7 +147,8 @@ public class MainPage {
         $(byText(docName)).closest("tr").find(byText("Отправить документ")).click();
         searchTextColl(obrabotkaDocov).last().isDisplayed();
         searchTextColl(obrabotkaDocov).last().click();
-        searchTextColl(obrabotkaZaver).last().waitUntil(Condition.appear, 1000);
+        sleepTime(4000);
+        searchTextColl(obrabotkaZaver).last().waitUntil(Condition.appear, 4000);
         searchTextColl(zakrit).last().click();
     }
 }

@@ -2,7 +2,6 @@ package task.steps;
 
 import io.qameta.allure.Step;
 import org.testng.Assert;
-import task.ElementsSearch;
 import task.pages.MainPage;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -65,7 +64,7 @@ public class QvitkiWorkflow {
     public static void proverkaQvitkovUtoch01(String docName){ //уточнение и квитанции у Отправителя
         open("http://postgresf.comita.lan:8080/ccwe/");
         logIn("megatester01", "gfhjkmnhb"); //логинимся Отправителем
-        ElementsSearch.searchName(papkaOtpr).click(); //переходим в папку Отправленные
+        searchText(papkaOtpr).click(); //переходим в папку Отправленные
         checkQvitKol(4, docName, 0); //проверяем количество квитанций
         sendQvitUniversal(docName, 1);//отправляем квитанции
         checkQvitKol(5, docName, 0); //проверяем количество квитанций

@@ -7,7 +7,6 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import task.pages.MainPage;
 import task.steps.FillKschf;
@@ -24,7 +23,6 @@ import static task.HelpMeths.logIn;
  */
 
 
-@Listeners({CustomTestListener.class})
 
 public class KschfDoThree {
 

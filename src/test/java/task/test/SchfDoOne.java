@@ -1,10 +1,12 @@
 package task.test;
 
-import io.qameta.allure.*;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import task.pages.MainPage;
 import task.steps.FilLSchf;
@@ -19,7 +21,6 @@ import static task.HelpMeths.logIn;
  * Created by alexeya on 08.07.2019.
  */
 
-@Listeners({CustomTestListener.class})
 
 public class SchfDoOne {
 

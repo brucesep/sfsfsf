@@ -3,7 +3,6 @@ package task.test;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import task.pages.MainPage;
 import task.steps.FillProch;
@@ -18,7 +17,6 @@ import static task.HelpMeths.logIn;
  * Created by alexeya on 12.07.2019.
  */
 
-@Listeners({CustomTestListener.class})
 
 public class ProchDoMass {
     //Полное ДО для Прочего документа - групповая отправка

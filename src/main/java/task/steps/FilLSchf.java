@@ -32,6 +32,7 @@ public class FilLSchf extends MainPage {
     static String rosRub = "643 Российский рубль";
     static String soderOper = "document.infoHozLive.infoHoz.infoOper";
     static String mainTable = ".x-grid3-cell-inner.x-grid3-col-nameProduct.x-unselectable";
+    //static String mainTable = "20%";
     static String autoCount = "Автоподсчет суммы";
     static String naimTovara = "nameProduct";
     static String okei = "okei";
@@ -45,6 +46,7 @@ public class FilLSchf extends MainPage {
     @Step("СЧФ. Заполнение таблицы.")
     public static void fillTable() {
         searchClass(mainTable).doubleClick();
+        //searchText(mainTable).doubleClick();
         sleepTime(500);
         searchText(autoCount).click();
         searchName(naimTovara).setValue("АВТО: наименование товара");
@@ -73,7 +75,7 @@ public class FilLSchf extends MainPage {
         searchName(valuraRaz).setValue("рос").click(); // указываем валюту
         searchTextColl(rosRub).get(0).isDisplayed();
         searchTextColl(rosRub).get(0).click();
-        $(By.id("panelRecipientColumn")).closest(".x-action-col-icon.x-action-col-0.undefined").click(); // выбираем получателя
+        $(By.id("panelRecipientColumn")).$(".x-action-col-icon.x-action-col-0.undefined").click(); // выбираем получателя
         searchText(tablePoluch).isDisplayed();
         searchText(adresat).isDisplayed(); //адресата передаем из вызывающего метода
         searchText(adresat).click(); //выбираем адресата хаб не хаб

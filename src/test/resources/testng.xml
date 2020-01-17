@@ -2,12 +2,16 @@
 
 <suite name="Suite1" verbose="1" >
 
+    <listeners>
+        <listener class-name="task.test.CustomTestListener"/>
+    </listeners>
+
     <test name="Schf 01 workflow" >
         <classes>
             <class name="task.test.SchfDoOne" />
         </classes>
     </test>
-    <test name="Schf 02 workflow" >
+<!--    <test name="Schf 02 workflow" >
         <classes>
             <class name="task.test.SchfDotwo" />
         </classes>
@@ -51,6 +55,6 @@
         <classes>
             <class name="task.test.ProchDoMass" />
         </classes>
-    </test>
+    </test>  -->
 
 </suite>
